@@ -57,7 +57,7 @@ app.use("/api/v1/", authRouter);
 
 
 app.use("/", (req,res) => {
-  res.send(`<a href="https://${process.env.DOMAIN}/api/v1/docs">Click Me To Interact With Basic Simple server</a>`)
+  res.send(`<a href="https://${process.env.DOMAIN}/api/v1/docs">Click Me To Interact With this Basic server</a>`)
 });
 
 const PORT = process.env.PORT || 4000;
