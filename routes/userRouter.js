@@ -85,6 +85,7 @@ router.get("/users/:id/", getSingleUser);
  *                 type: string
  *               age:
  *                 type: number
+ *                 default: 1
  *     responses:
  *       200:
  *         description: sample responds for successful signup.
@@ -116,6 +117,12 @@ router.post("/adduser/", addUser);
  *            application/json:
  *              schema:
  *                type: object
+ *                properties:
+ *                  password:
+ *                    type: string
+ *                  age:
+ *                    type: number
+ *                    default: 1    
  *     responses:
  *       200:
  *         description: sample of expected output.

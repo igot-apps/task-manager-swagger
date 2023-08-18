@@ -22,8 +22,10 @@ const { login, logout, addUser } = require("../controller/authController");
  *             properties:
  *               username:
  *                 type: string
+ *                 default : abraham     
  *               password:
  *                 type: string
+ *                 default: abraham500      
  *     responses:
  *       200:
  *         description: responds for a successful login.

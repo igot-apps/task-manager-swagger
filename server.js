@@ -14,7 +14,7 @@ const options = {
     definition: {
       openapi: '3.0.0',
       info: {
-        title: 'Complex API with OpenAPI',
+        title: 'Task Manager Demo backend api + jwt auth',
         version: '1.0.0',
       },
       components: {

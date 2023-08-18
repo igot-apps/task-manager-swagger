@@ -29,7 +29,7 @@ const {
  *             example:
  *                 _id: 64d98c0e98909cb932b2f87e
  *                 description: learn to HARD
- *                 compeleted: true
+ *                 completed: true
  *                 "owner": "64d98b6e98909cb932b2f875"
  */
 
@@ -55,7 +55,7 @@ router.get("/tasks", authenticate, getTasks);
  *             example:
  *                 _id: 64d98c0e98909cb932b2f87e
  *                 description: learn to HARD
- *                 compeleted: true
+ *                 completed: true
  *                 "owner": "64d98b6e98909cb932b2f875"
  */
 router.get("/tasks/:id/", getSingleTask);
@@ -74,10 +74,9 @@ router.get("/tasks/:id/", getSingleTask);
  *             properties:
  *               description:
  *                 type: string
- *               compeleted:
+ *               completed:
  *                 type: boolean
- *               owner:
- *                 type: string
+ *                 default: false
  *     responses:
  *       200:
  *         description: sample responds for successful signup.
@@ -110,12 +109,13 @@ router.post("/addTask/", authenticate, addTask);
  *           schema:
  *             type: object
  *             properties:
- *               completed:
- *                 type: boolean
- *                 description: Indicates whether the task is completed or not.
  *               description:
  *                 type: string
  *                 description: Description of the task.
+ *               completed:
+ *                 type: boolean
+ *                 description: Indicates whether the task is completed or not.
+ *                 default: false
  *     responses:
  *       200:
  *         description: Sample of expected output.
